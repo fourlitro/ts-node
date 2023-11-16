@@ -1,12 +1,16 @@
-import { Hero , Hero1, Hero2} from "./classes/Hero"; //t y exportacion con alias 
-// import * as HeroClasses from "./classes/Hero";
-// import powers from "./data/powers"; //export default
-// const Hero = 123;
+import { printObject, genericFunction } from "./generics/generics";
 
-const ironman = new Hero("Ironman", 1, 55); //exportacion ya con alias
-//const ironman = new HeroClasses.Hero("Ironman", 1, 55);
 
-console.log(ironman);
-console.log(ironman.power);
+// printObject(123);
 
-// console.log(powers); //export default
+// printObject(new Date());
+
+// printObject({ a: 1, b: 2, c: 3 });
+
+// printObject([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+// printObject("Hola mundo");
+
+
+console.log(genericFunction(3.141618).toFixed(2))
+console.log(genericFunction("Hola mundo").toFixed(2))
